@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "coolmessenger",
+  "version": "${version}",
+  "name": "Cool Messenger Client",
+  "description": "Клиент Cool Messenger прямо в Minecraft.\n\nИзменения в 1.2.6:\n- PONG на PING теперь отправляется всегда\n- Исправлено пропадание чатов из-за таймаута WebSocket",
+  "icon": "assets/coolmessenger/icon.png",
+  "authors": ["Cactustopme"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.cactustopme.coolmessenger.CoolMessengerMod"]
+  },
+  "mixins": ["coolmessenger.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "fabric-api": "*",
+    "minecraft": "~1.21.11",
+    "java": ">=21"
+  }
+}
